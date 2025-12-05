@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gifts - MerryTech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-bg">
+    <header>
+        <h1 class="christmas-title">MerryTech!</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="games.html" class="active">Gifts</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="center-box">
+        <h1>Holiday Gifts</h1>
+        <p>Want some motivations?</p>
+    </section>
+
+    <section class="center-box" style="margin-top:40px;">
+        <h2 class="games-heading">🎁 Pick a Gift and Get Inspired!</h2>
+
+        <div class="gift-gallery">
+            <div class="gift-item" onclick="showMessage(0)">🎁<br>Gift 1</div>
+            <div class="gift-item" onclick="showMessage(1)">🎁<br>Gift 2</div>
+            <div class="gift-item" onclick="showMessage(2)">🎁<br>Gift 3</div>
+        </div>
+
+        <p id="message" class="motivation-text"></p>
+
+        <a href="about.html" class="get-started-btn">💡 Click to Know More!</a>
+
+    </section>
+
+    <script>
+        const messages = [
+            "Believe in yourself! You can achieve anything.",
+            "Every step counts. Keep moving forward!",
+            "Dream big, code bigger!"
+        ];
+
+        function showMessage(index) {
+            const messageElement = document.getElementById("message");
+            messageElement.textContent = messages[index];
+        }
+    </script>
+
+    <p style="font-size:40px; margin-top:300px;"></p>
+
+</body>
+</html>
